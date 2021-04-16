@@ -14,6 +14,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
+          repository: 'woocommerce/woocommerce'
           ref: ${{ github.event.inputs.ref || github.ref }}
       - name: Build the zip file
         id: build
